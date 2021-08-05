@@ -1,0 +1,173 @@
+/* header */
+body{
+    margin: auto;
+    padding: auto;
+    font-family: Poppins;
+}
+p, h5{
+    color: #6C6C6C;
+}
+
+.flexible-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #2D25A0;
+    padding-bottom: 60px;
+    align-items: center;
+}
+.flexible-container:hover{
+    width: 800px;
+}
+.half-width{
+    width: 40%;
+    padding-left: 8%;
+}
+.half-width h1{
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 27px;
+    
+}
+.link-button{
+    text-decoration: none;
+    background-color:#E02C6D;
+    font-size: 16px;
+    padding: 10px 24px;
+    color: #FFFFFF;
+}
+
+
+
+.half-width img{
+    width: 100%;
+}
+
+
+
+/* main */
+/* players */
+.card-item{
+    margin-top: 43px;
+    font-family: Poppins;
+}
+.card-group{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+.card{
+    padding: 15px;
+    box-shadow: 0px 0px 40px 0px #00000026;
+    border-radius: 5px;
+}
+.card img{
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* fifa */
+.all-fifa{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+.fifa{
+    padding: 15px;
+    box-shadow: 0px 0px 40px 0px #00000026;
+    border-radius: 5px;
+}
+.fifa img{
+    border-radius: 5px;
+    width: 100%;
+}
+.fifa-president{
+    text-align: center;
+    margin:50px 210px;
+}
+
+/* copa cmerica */
+.copa-america{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-bottom: 27px;
+    align-items: center;
+    
+}
+.copa-heading h2{
+    font-size: 45px;
+    margin: 0;
+}
+.copa-heading p{
+    margin-bottom: 30px;
+}
+
+.copa-image img{
+    width: 100%;
+}
+
+/* footer */
+.footer{
+    text-align: center;
+    margin: 50px 0;
+}
+.footer img{
+    width: 30%;
+}
+.btn{
+    border: none;
+    padding:5px 8px;
+    font-size: 1.5rem;
+    border-radius:10px;
+}
+
+/* media quaries */
+
+/* mobile devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .flexible-container, .card-group, .all-fifa, .copa-america{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .fifa-president{
+        width: 80%;
+        margin:10px 50px;
+        text-align: justify;
+    }
+    
+    
+    
+}
+
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width : 992px) {
+    .container{
+        width:100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+        
+    } 
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+        
+    } 
+    
+}
