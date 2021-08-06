@@ -1,34 +1,36 @@
-/* header */
 body{
     margin: auto;
     padding: auto;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
 }
 p, h5{
     color: #6C6C6C;
 }
 
+/* header */
 .flexible-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background: #2D25A0;
     padding-bottom: 60px;
-    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    
 }
 .flexible-container:hover{
     width: 800px;
 }
-.half-width{
-    width: 40%;
-    padding-left: 8%;
+.half-width-hedding{
+    padding: 0 100px;
 }
-.half-width h1{
+.half-width-hedding h1{
     color: #FFFFFF;
     font-family: Poppins;
     font-weight: bold;
-    font-size: 64px;
+    font-size: 74px;
     line-height: 80px;
     margin-bottom: 27px;
+    width: 484px;
     
 }
 .link-button{
@@ -42,7 +44,7 @@ p, h5{
 
 
 .half-width img{
-    width: 100%;
+    width: 80%;
 }
 
 
@@ -93,7 +95,7 @@ p, h5{
 }
 .fifa-president{
     text-align: center;
-    margin:50px 210px;
+    margin:50px 510px;
 }
 
 /* copa cmerica */
@@ -146,28 +148,15 @@ p, h5{
         grid-template-columns: repeat(1, 1fr);
         
     }
+    .flexible-container{
+        padding: 0;
+        margin: 0;
+    }
     .fifa-president{
-        width: 80%;
-        margin:10px 50px;
-        text-align: justify;
+        width: 50%;
+        text-align:center;
+        padding-left: 60px;
+        margin: 10px 50px;
     }
-    
-    
-    
-}
-
-/* tablet devices */
-@media only screen and (min-width:688px) and (max-width : 992px) {
-    .container{
-        width:100%;
-    }
-    .players, .courses{
-        grid-template-columns: repeat(2, 1fr);
-        
-    } 
-    .blogs{
-        grid-template-columns: repeat(1, 1fr);
-        
-    } 
     
 }
